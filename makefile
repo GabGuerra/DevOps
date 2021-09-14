@@ -38,13 +38,13 @@ JC = javac
 # CLASSES is a macro consisting of 4 words (one for each java source file)
 #
 
-CLASSES = \
-	JogoDaVelha/Computador.java \
-	JogoDaVelha/Humano.java \
+CLASSES = \	
+	JogoDaVelha/Tabuleiro.java \
 	JogoDaVelha/Jogador.java \
+	JogoDaVelha/Humano.java \
+	JogoDaVelha/Computador.java \
 	JogoDaVelha/Jogo.java \
-	JogoDaVelha/JogoDaVelha.java \
-	JogoDaVelha/Tabuleiro.java 
+	JogoDaVelha/JogoDaVelha.java 
 
 #
 # the default make target entry
