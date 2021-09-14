@@ -39,12 +39,12 @@ JC = javac
 #
 
 CLASSES = \
-	Computador.java \
-	Humano.java \
-	Jogador.java \
-	Jogo.java \
-	JogoDaVelha.java \
-	Tabuleiro.java 
+	/JogoDaVelha/Computador.java \
+	/JogoDaVelha/Humano.java \
+	/JogoDaVelha/Jogador.java \
+	/JogoDaVelha/Jogo.java \
+	/JogoDaVelha/JogoDaVelha.java \
+	/JogoDaVelha/Tabuleiro.java 
 
 #
 # the default make target entry
