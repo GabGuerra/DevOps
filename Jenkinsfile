@@ -1,9 +1,10 @@
 node {
     checkout scm
     stage('Build') {
-                sh 'docker build -t jogodavelha .
-				sh docker run -i -t jogodavelha:latest /bin/bash
-				' 
+                sh '''
+                docker build -t jogodavelha .
+				docker run -i -t jogodavelha:latest /bin/bash
+				'''
     }
     stage('Test') {
         echo 'Testing...'
