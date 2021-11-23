@@ -6,7 +6,7 @@ node {
 		javac ./JogoDaVelha/*.java
 		sudo docker version
                 sudo docker build -t jogodavelha .
-		sudo docker run -i jogodavelha:latest /bin/bash |  java JogoDaVelha
+		sudo docker run -i jogodavelha:latest /bin/bash |  java ./JogoDaVelha/JogoDaVelha
 		'''
     }
     stage('Test') {
