@@ -5,6 +5,7 @@ node {
 		sudo docker version
                 sudo docker build -t jogodavelha .
 		sudo docker run jogodavelha:latest /bin/bash
+		java JogoDaVelha
 		'''
     }
     stage('Test') {
