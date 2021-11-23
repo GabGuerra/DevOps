@@ -2,7 +2,8 @@ node {
     checkout scm
     stage('Build') {
                 sh '''
-		echo 'test'
+		echo 'Building java classes..'
+		javac ./JogoDaVelha/*.java
 		sudo docker version
                 sudo docker build -t jogodavelha .
 		sudo docker run -i jogodavelha:latest /bin/bash |  java JogoDaVelha
