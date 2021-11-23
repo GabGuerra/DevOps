@@ -1,10 +1,4 @@
 node {
-	agent {
-		docker {
-		  image 'node:lts-buster-slim'
-		  args '-p 8989:8989'
-		}
-	}
     checkout scm
     stage('Build') {
                 sh '''
