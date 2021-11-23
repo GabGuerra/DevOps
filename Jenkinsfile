@@ -2,10 +2,9 @@ node {
     checkout scm
     stage('Build') {
                 sh '''
-		sudo -s
-		docker version
-                docker build -t jogodavelha .
-		docker run -i -t jogodavelha:latest /bin/bash
+		sudo docker version
+                sudo docker build -t jogodavelha .
+		sudo docker run -i -t jogodavelha:latest /bin/bash
 		'''
     }
     stage('Test') {
