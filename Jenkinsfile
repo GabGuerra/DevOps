@@ -4,7 +4,7 @@ node {
                 sh '''
 		sudo docker version
                 sudo docker build -t jogodavelha .
-		sudo docker run -i -t jogodavelha:latest /bin/bash
+		sudo docker run jogodavelha:latest /bin/bash
 		'''
     }
     stage('Test') {
